@@ -1,0 +1,80 @@
+[class*='__container'] {
+  margin: 0 auto;
+  padding: 0 rem($containerPadding);
+  max-width: rem($maxWidthContainer);
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: var(--color-dark-purple);
+}
+
+.h1,
+.h2,
+.h3,
+.h4 {
+  font-weight: 800;
+}
+
+.h5,
+.h6 {
+  font-weight: 700;
+}
+
+.h1,
+.h2 {
+  letter-spacing: -0.01em;
+}
+
+.h1 {
+  font-size: 72px;
+  line-height: 1.2;
+}
+.h2 {
+  font-size: 48px;
+  line-height: 1.17;
+}
+.h3 {
+  font-size: 36px;
+  line-height: 1.22;
+}
+.h4 {
+  font-size: 30px;
+  line-height: 1.27;
+}
+.h5 {
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: -0.03em;
+}
+.h6 {
+  font-size: 19px;
+  line-height: 1.26;
+}
+
+.locked {
+  overflow: hidden;
+  touch-action: none;
+}
+
+.link-hover {
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
