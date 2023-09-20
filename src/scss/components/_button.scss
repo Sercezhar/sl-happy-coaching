@@ -1,0 +1,14 @@
+.button {
+  width: 250px;
+  height: 42px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.71;
+  background-color: var(--color-accent);
+  border-radius: 10px;
+  transition: opacity 250ms $transitionBase;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
