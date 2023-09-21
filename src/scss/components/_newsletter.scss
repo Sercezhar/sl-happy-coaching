@@ -1,0 +1,102 @@
+.newsletter {
+  padding-block: 48px;
+  background-color: var(--color-off-white);
+
+  @media (max-width: $tablet) {
+    padding-block: 36px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  & .h4 {
+    margin-bottom: 16px;
+    @include adaptiveValue('font-size', 30, 16);
+
+    @media (max-width: $tablet) {
+      margin-bottom: 6px;
+      font-size: 30px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      @include adaptiveValue('font-size', 30, 22);
+    }
+  }
+
+  &__text {
+    line-height: 1.5;
+    @include adaptiveValue('font-size', 20, 6);
+
+    @media (max-width: $tablet) {
+      font-size: 20px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      @include adaptiveValue('font-size', 20, 13);
+    }
+
+    @media (max-width: $mobileSmall) {
+      font-size: 16px;
+    }
+  }
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 16px;
+
+  @media (max-width: $mobileSmall) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  & input {
+    padding-inline: 14px;
+    width: 280px;
+    height: 44px;
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    outline: none;
+    transition: box-shadow 250ms $transitionBase;
+
+    @media (max-width: $mobileSmall) {
+      width: 100%;
+    }
+
+    &:focus {
+      box-shadow: $shadowInput;
+    }
+
+    &::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  & button {
+    width: 150px;
+    height: 44px;
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--color-accent);
+    border-radius: 8px;
+    transition: opacity 250ms $transitionBase;
+
+    @media (max-width: $mobileSmall) {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
