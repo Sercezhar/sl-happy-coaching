@@ -1,5 +1,96 @@
 <footer class="footer">
-	<div class="footer__container">
-		<p>Footer content</p>
-	</div>
+  {% include './../components/newsletter.twig' %}
+
+  <div class="footer__container">
+    <div class="footer__content">
+      <div>
+        {% include './../components/logo.twig' %}
+
+        <p class="footer__text">
+          Design amazing digital experiences that create more happy in the
+          world.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-links__column">
+          <h6 class="footer-links__title">Pages</h6>
+
+          <ul class="footer-links__list">
+            <li>
+              <a class="link-hover" href="#">Home</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#">Services</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#">About us</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#">Extra sales</a>
+            </li>
+            <li>
+              <a class="link-hover" href="#">Free guide</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-links__column">
+          <h6 class="footer-links__title">Contact</h6>
+
+          <ul class="footer-links__list footer-links__list--contact">
+            <li>
+              <a class="link-hover" href="tel:+123456789">+123 456 789</a>
+            </li>
+            <li>
+              <a class="link-hover" href="mailto:hello@happydigital.nl"
+                >hello@happydigital.nl</a
+              >
+            </li>
+            <li>
+              <a class="link-hover" href="https://www.instagram.com/"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a class="link-hover" href="https://www.linkedin.com/"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright">
+      <p class="footer-copyright__developer">
+        Made with determination by
+        <a class="link-hover" href="https://github.com/Sercezhar">Sercezhar</a>
+      </p>
+
+      <ul class="footer-copyright__list">
+        <li>
+          <a href="#">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-dribbble"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </footer>
