@@ -1,0 +1,120 @@
+.intro {
+  &__container {
+    padding-top: 143px;
+    padding-bottom: 61px;
+
+    @media (max-width: $mobileMedium) {
+      padding-top: 103px;
+    }
+  }
+}
+
+.intro-text {
+  position: relative;
+  display: flex;
+  margin-bottom: 16px;
+
+  @media (max-width: $mobileMedium) {
+    flex-direction: column;
+  }
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -33px;
+    left: 0;
+    width: 101px;
+    height: 17px;
+    background-image: url("data:image/svg+xml,%3Csvg width='101' height='17' viewBox='0 0 101 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26.2609 4.32287L38.3456 17L50.5232 4.32287L62.6544 17L74.7391 4.32287L86.8702 17L101 2.23427L98.8155 0L86.8702 12.4828L74.925 0L74.7391 0.194298L74.5996 0L62.6544 12.4828L50.6627 0L50.5232 0.194298L50.3373 0L38.3456 12.4828L26.4004 0L26.2609 0.194298L26.075 0L14.1298 12.4828L2.18454 0L0 2.23427L14.1298 17L26.2609 4.32287Z' fill='%233F3A64'/%3E%3C/svg%3E");
+  }
+
+  & .h2 {
+    margin-top: 16px;
+    margin-right: 74px;
+    max-width: 492px;
+    @include adaptiveValue('font-size', 48, 24);
+
+    @media (max-width: $tablet) {
+      margin-right: 32px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__paragraphs {
+    width: 100%;
+    max-width: 468px;
+  }
+}
+
+.intro-list {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobileMedium) {
+    flex-direction: column;
+  }
+
+  @media (max-width: $mobileSmall) {
+    align-items: center;
+  }
+
+  & li {
+    padding: 40px;
+    max-width: 380px;
+
+    @media (max-width: $tablet) {
+      padding: 20px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      padding: 16px;
+    }
+
+    &:nth-child(odd) {
+      @media (max-width: $mobileMedium) {
+        margin-left: auto;
+      }
+
+      @media (max-width: $mobileSmall) {
+        margin-left: 0;
+      }
+    }
+
+    & svg {
+      margin-bottom: 32px;
+      width: 72px;
+      height: 72px;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 16px;
+        width: 62px;
+        height: 62px;
+      }
+
+      @media (max-width: $mobileMedium) {
+        margin-right: 8px;
+      }
+
+      @media (max-width: $mobileSmall) {
+        width: 52px;
+        height: 52px;
+      }
+    }
+
+    & .h5 {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__item-head {
+    @media (max-width: $mobileMedium) {
+      display: flex;
+      align-items: end;
+    }
+  }
+}
