@@ -1,1 +1,19 @@
-{}
+{
+  "reviews": [
+    {
+      "image": "./images/clients/client-1.jpg",
+      "name": "Jane",
+      "comment": "I gained so much confidence in my ability to connect and deepen my relationships with people."
+    },
+    {
+      "image": "./images/clients/client-2.jpg",
+      "name": "Catherine",
+      "comment": "I gained so much confidence in my ability to connect and deepen my relationships with people."
+    },
+    {
+      "image": "./images/clients/client-3.jpg",
+      "name": "Kara",
+      "comment": "I gained so much confidence in my ability to connect and deepen my relationships with people."
+    }
+  ]
+}
