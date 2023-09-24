@@ -1,0 +1,20 @@
+<section class="reviews">
+  <div class="reviews__container">
+    <h2 class="h2">Hear out what my clients say about me.</h2>
+
+    <div class="reviews-list">
+      {% for review in reviews %}
+      <div class="reviews-list__item">
+        <p>"{{ review.comment }}"</p>
+        <div class="reviews-list__client">
+          <h5 class="h5">{{ review.name }}</h5>
+          <img src="{{ review.image }}" alt="girl" />
+        </div>
+        <svg width="116" height="20">
+          <use href="./images/icons.svg#icon-stars"></use>
+        </svg>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
