@@ -40,18 +40,6 @@
   & .h1 {
     margin-bottom: 22px;
     max-width: 520px;
-
-    @media (max-width: $tablet) {
-      font-size: 68px;
-    }
-
-    @media (max-width: $mobileMedium) {
-      font-size: 43px;
-    }
-
-    @media (max-width: $mobileSmall) {
-      font-size: 41px;
-    }
   }
 
   &__text {

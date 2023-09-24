@@ -33,7 +33,6 @@
     margin-top: 16px;
     margin-right: 74px;
     max-width: 492px;
-    @include adaptiveValue('font-size', 48, 24);
 
     @media (max-width: $tablet) {
       margin-right: 32px;

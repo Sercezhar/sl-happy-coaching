@@ -31,19 +31,19 @@
 }
 
 .h1 {
-  font-size: 72px;
+  @include adaptiveValue('font-size', 72, 38);
   line-height: 1.2;
 }
 .h2 {
-  font-size: 48px;
+  @include adaptiveValue('font-size', 48, 26);
   line-height: 1.17;
 }
 .h3 {
-  font-size: 36px;
+  @include adaptiveValue('font-size', 36, 24);
   line-height: 1.22;
 }
 .h4 {
-  font-size: 30px;
+  @include adaptiveValue('font-size', 30, 22);
   line-height: 1.27;
 }
 .h5 {
