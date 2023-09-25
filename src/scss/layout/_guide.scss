@@ -1,0 +1,50 @@
+.guide {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    @include adaptiveValue('padding-top', 158, 58);
+    @include adaptiveValue('padding-bottom', 139, 100);
+
+    & > img {
+      @include adaptiveValue('width', 478, 248);
+
+      @media (max-width: $mobileMedium) {
+        display: none;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    & > img {
+      display: none;
+      width: 100%;
+
+      @media (max-width: $mobileMedium) {
+        display: block;
+      }
+    }
+  }
+
+  & .h2 {
+    max-width: 490px;
+
+    @media (max-width: $mobileMedium) {
+      max-width: 100%;
+    }
+  }
+
+  &__text {
+    max-width: 550px;
+    @include adaptiveValue('font-size', 20, 16);
+
+    @media (max-width: $mobileMedium) {
+      max-width: 100%;
+    }
+  }
+}
