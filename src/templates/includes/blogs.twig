@@ -1,0 +1,23 @@
+<section class="blogs">
+  <div class="blogs__container">
+    <h2 class="h2">Stay Motivated, read the weekly blog articles.</h2>
+
+    <ul class="blogs-list">
+      {% for blog in blogs %}
+      <li>
+        <a href="#">
+          <img src="{{ blog.image }}" alt="{{ blog.alt }}" />
+          <div class="blogs-list__text">
+            <h5 class="h5">{{ blog.title }}</h5>
+            <p>
+              {{ blog.text }}
+            </p>
+          </div>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+
+    {% include './../components/button.twig' with {'text': 'Read more blogs'} %}
+  </div>
+</section>
