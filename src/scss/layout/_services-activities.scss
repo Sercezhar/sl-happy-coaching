@@ -1,0 +1,87 @@
+.services-activities {
+  &__container {
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+
+  & .h2 {
+    margin-inline: auto;
+    margin-bottom: 80px;
+    max-width: 680px;
+    text-align: center;
+
+    @media (max-width: $mobileMedium) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.services-activities-list {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, minmax(0, 450px));
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: $mobileMedium) {
+    grid-template-columns: minmax(0, 567px);
+  }
+
+  &__item {
+    border: 1px solid #edeff5;
+
+    @media (min-width: $mobileSmall) and (max-width: $mobileMedium) {
+      width: 385px;
+
+      &:nth-child(odd) {
+        justify-self: end;
+      }
+
+      &:nth-child(even) {
+        justify-self: start;
+      }
+    }
+
+    &:nth-child(1) {
+      margin-top: -60px;
+    }
+    &:nth-child(2) {
+      margin-top: 60px;
+    }
+    &:nth-child(3) {
+      margin-top: -120px;
+    }
+    &:nth-child(-n + 3) {
+      @media (max-width: $mobileMedium) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    @include adaptiveValue('padding-block', 56, 0);
+    @include adaptiveValue('padding-inline', 75, 0);
+
+    @media (max-width: $mobileMedium) {
+      @include adaptiveValue('padding', 30, 15);
+    }
+
+    &:hover .h5 {
+      color: var(--color-accent);
+    }
+
+    & svg {
+      @extend .intro-list__icon;
+    }
+
+    & .h5 {
+      margin-bottom: 16px;
+      transition: color 250ms $transitionBase;
+    }
+
+    & p {
+      letter-spacing: -0.02em;
+    }
+  }
+}

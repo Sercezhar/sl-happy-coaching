@@ -1,0 +1,21 @@
+<section class="services-activities">
+  <div class="services-activities__container">
+    <h2 class="h2">I can help you in these particular areas.</h2>
+
+    <ul class="services-activities-list">
+      {% for service in services %}
+      <li class="services-activities-list__item">
+        <a class="services-activities-list__link" href="#">
+          <div class="intro-list__item-head">
+            <svg>
+              <use href="{{ service.icon }}"></use>
+            </svg>
+            <h5 class="h5">{{ service.title }}</h5>
+          </div>
+          <p>{{ service.text }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
