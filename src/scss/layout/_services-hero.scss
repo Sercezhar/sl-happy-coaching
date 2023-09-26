@@ -1,0 +1,48 @@
+.services-hero {
+  background-color: var(--color-off-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-block: 92px;
+  }
+
+  & .pretitle {
+    margin-bottom: 6px;
+
+    @media (max-width: $mobileMedium) {
+      font-size: 13px;
+    }
+  }
+
+  & .h1 {
+    margin-bottom: 30px;
+    max-width: 520px;
+    @include adaptiveValue('font-size', 72, 28);
+
+    @media (max-width: $mobileSmall) {
+      @include adaptiveValue('font-size', 72, 38);
+    }
+  }
+
+  & img {
+    width: percent(462, 1280);
+    max-width: 462px;
+    @include adaptiveValue('margin-right', 91, 0);
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+    }
+
+    @media (max-width: $mobileMedium) {
+      height: 350px;
+      object-fit: cover;
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: none;
+    }
+  }
+}
