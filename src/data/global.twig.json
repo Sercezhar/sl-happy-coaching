@@ -1,4 +1,26 @@
 {
+  "services": [
+    {
+      "icon": "./images/icons.svg#icon-couple",
+      "title": "Group Sessions",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "icon": "./images/icons.svg#icon-book",
+      "title": "Online course",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles",
+      "title": "Consultation",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "icon": "./images/icons.svg#icon-book",
+      "title": "1:1 Coaching",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    }
+  ],
   "reviews": [
     {
       "image": "./images/clients/client-1.jpg",
