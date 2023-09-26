@@ -20,9 +20,9 @@
 
     <ul class="intro-list">
       {% for service in services if service.title != 'Online course' %}
-      <li>
+      <li class="intro-list__item">
         <div class="intro-list__item-head">
-          <svg width="72" height="72">
+          <svg class="intro-list__icon">
             <use href="{{ service.icon }}"></use>
           </svg>
           <h5 class="h5">{{ service.title }}</h5>
