@@ -28,12 +28,17 @@ body {
 body {
   display: flex;
   flex-direction: column;
+  padding-top: $headerHeightLg;
   min-height: 100%;
   color: var(--color-text-main);
   font-size: $fontSizeMain;
   line-height: $lineHeightMain;
   font-family: $fontFamilyMain;
   text-size-adjust: 100%;
+
+  @media (max-width: $mobileMedium) {
+    padding-top: $headerHeightSm;
+  }
 }
 
 input,
