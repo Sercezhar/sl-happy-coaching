@@ -19,45 +19,17 @@
     </div>
 
     <ul class="intro-list">
+      {% for service in services if service.title != 'Online course' %}
       <li>
         <div class="intro-list__item-head">
           <svg width="72" height="72">
-            <use href="./images/icons.svg#icon-book"></use>
+            <use href="{{ service.icon }}"></use>
           </svg>
-          <h5 class="h5">1:1 Coaching</h5>
+          <h5 class="h5">{{ service.title }}</h5>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-          veniam.
-        </p>
+        <p>{{ service.text }}</p>
       </li>
-      <li>
-        <div class="intro-list__item-head">
-          <svg width="78" height="78">
-            <use href="./images/icons.svg#icon-speech-bubbles"></use>
-          </svg>
-          <h5 class="h5">Consultation</h5>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-          veniam.
-        </p>
-      </li>
-      <li>
-        <div class="intro-list__item-head">
-          <svg>
-            <use href="./images/icons.svg#icon-couple"></use>
-          </svg>
-          <h5 class="h5">Group Sessions</h5>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua minim
-          veniam.
-        </p>
-      </li>
+      {% endfor %}
     </ul>
   </div>
 </section>
