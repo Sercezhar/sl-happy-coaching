@@ -63,7 +63,7 @@
     align-items: center;
   }
 
-  & li {
+  &__item {
     padding: 40px;
     max-width: 380px;
 
@@ -85,29 +85,12 @@
       }
     }
 
-    & svg {
-      margin-bottom: 32px;
-      width: 72px;
-      height: 72px;
-
-      @media (max-width: $tablet) {
-        margin-bottom: 16px;
-        width: 62px;
-        height: 62px;
-      }
-
-      @media (max-width: $mobileMedium) {
-        margin-right: 8px;
-      }
-
-      @media (max-width: $mobileSmall) {
-        width: 52px;
-        height: 52px;
-      }
-    }
-
     & .h5 {
       margin-bottom: 16px;
+    }
+
+    & p {
+      letter-spacing: -0.02em;
     }
   }
 
@@ -115,6 +98,27 @@
     @media (max-width: $mobileMedium) {
       display: flex;
       align-items: end;
+    }
+  }
+
+  &__icon {
+    margin-bottom: 32px;
+    width: 72px;
+    height: 72px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 16px;
+      width: 62px;
+      height: 62px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      margin-right: 8px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      width: 52px;
+      height: 52px;
     }
   }
 }
