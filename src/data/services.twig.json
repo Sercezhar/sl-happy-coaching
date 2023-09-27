@@ -1,1 +1,25 @@
-{ "title": "Services" }
+{
+  "title": "Services",
+  "features": [
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles-sm",
+      "title": "Talk to me first",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    },
+    {
+      "icon": "./images/icons.svg#icon-calendar",
+      "title": "Schedule a meeting",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    },
+    {
+      "icon": "./images/icons.svg#icon-skype",
+      "title": "Online consultation",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubble",
+      "title": "Ready to start? Let’s talk!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    }
+  ]
+}
