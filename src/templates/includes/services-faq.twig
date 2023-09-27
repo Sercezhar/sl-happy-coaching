@@ -1,0 +1,44 @@
+<section class="services-faq">
+  <div class="services-faq__container">
+    <div class="services-faq__text-wrapper">
+      <h2 class="h2">Good to know.</h2>
+      <p>Everything you need to know about the my services.</p>
+    </div>
+
+    <ul class="accordion">
+      {% for faq in faqs %}
+      <li class="accordion__item">
+        <div class="accordion-trigger">
+          <p class="accordion-trigger__text">
+            {{ faq.question }}
+          </p>
+
+          <div class="accordion-trigger-icon">
+            <span
+              class="accordion-trigger-icon__line accordion-trigger-icon__line--first"
+            ></span>
+            <span
+              class="accordion-trigger-icon__line accordion-trigger-icon__line--second"
+            ></span>
+          </div>
+        </div>
+
+        <div class="accordion-content">
+          <p class="accordion-content__text">
+            {{ faq.answer }}
+          </p>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+
+    <div class="services-faq-callout">
+      <h6>Still have questions?</h6>
+      <p>
+        Can’t find the answer you’re looking for? Please chat to our friendly
+        team.
+      </p>
+      <a href="#">Get in touch</a>
+    </div>
+  </div>
+</section>
