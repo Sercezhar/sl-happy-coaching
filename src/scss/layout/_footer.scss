@@ -91,5 +91,16 @@
   &__list {
     display: flex;
     gap: 24px;
+
+    & a:hover {
+      & svg {
+        fill: var(--color-accent);
+      }
+    }
+
+    & svg {
+      fill: var(--color-footer-icons);
+      transition: fill 250ms $transitionBase;
+    }
   }
 }
