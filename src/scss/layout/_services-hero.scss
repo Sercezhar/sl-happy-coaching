@@ -27,6 +27,10 @@
     }
   }
 
+  & .hero__text {
+    margin-bottom: 0;
+  }
+
   & img {
     width: percent(462, 1280);
     max-width: 462px;
