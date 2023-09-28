@@ -1,0 +1,26 @@
+<section class="features">
+  <div class="features__container">
+    <div class="features__text-wrapper">
+      <p class="pretitle">How does it work?</p>
+      <h2 class="h2">Are you ready to transform your life?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua minim veniam.
+      </p>
+    </div>
+
+    <ul class="features__list">
+      {% for feature in features %}
+      <li>
+        <div class="features__icon">
+          <svg width="22" height="22">
+            <use href="{{ feature.icon }}"></use>
+          </svg>
+        </div>
+        <h6 class="h6">{{ feature.title }}</h6>
+        <p>{{ feature.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
