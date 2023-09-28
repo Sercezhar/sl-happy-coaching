@@ -1,0 +1,7 @@
+.sales-hero {
+  & img {
+    @media (max-width: $mobileMedium) {
+      object-position: top 0 left 100%;
+    }
+  }
+}
