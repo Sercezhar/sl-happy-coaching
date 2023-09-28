@@ -1,0 +1,15 @@
+<section class="about-companies">
+  <div class="about-companies__container">
+    <h6>From startups to the world’s largest companies</h6>
+
+    <ul class="about-companies__list">
+      {% for company in companies %}
+      <li>
+        <svg width="{{ company.width }}" height="48">
+          <use href="{{ company.logo }}"></use>
+        </svg>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

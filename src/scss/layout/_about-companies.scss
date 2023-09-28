@@ -1,0 +1,48 @@
+.about-companies {
+  &__container {
+    padding-block: 96px;
+    text-align: center;
+
+    @media (max-width: $mobileSmall) {
+      padding-block: 64px;
+    }
+
+    & h6 {
+      margin-bottom: 32px;
+      color: #667085;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 42px;
+
+    @media (max-width: $tablet) {
+      justify-content: center;
+    }
+
+    & li {
+      display: flex;
+      @include adaptiveValue('width', 190, 150, 1439.98, 991.98);
+
+      @media (max-width: $tablet) {
+        flex-basis: 24%;
+      }
+
+      @media (max-width: $mobileMedium) {
+        flex-basis: 28%;
+      }
+
+      @media (max-width: $mobileSmall) {
+        flex-basis: 34%;
+      }
+
+      & svg {
+        width: 100%;
+      }
+    }
+  }
+}
