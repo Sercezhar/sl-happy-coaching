@@ -1,1 +1,25 @@
-{ "title": "About us" }
+{
+  "title": "About us",
+  "companies": [
+    {
+      "logo": "./images/icons.svg#icon-company-1",
+      "width": "146"
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-2",
+      "width": "169"
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-3",
+      "width": "183"
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-4",
+      "width": "160"
+    },
+    {
+      "logo": "./images/icons.svg#icon-company-5",
+      "width": "187"
+    }
+  ]
+}
