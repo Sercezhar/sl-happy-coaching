@@ -52,7 +52,7 @@
   letter-spacing: -0.03em;
 }
 .h6 {
-  font-size: 19px;
+  @include adaptiveValue('font-size', 19, 17);
   line-height: 1.26;
 }
 
