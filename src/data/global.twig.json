@@ -55,5 +55,37 @@
       "question": "How often do we meet?",
       "answer": "We typically meet on a weekly basis, but we can adjust the frequency based on your needs and schedule."
     }
+  ],
+  "features": [
+    {
+      "icon": "./images/icons.svg#icon-speech-bubble",
+      "title": "Ready to start? Let’s talk!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-calendar",
+      "title": "Personal schedule",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles-sm",
+      "title": "Group chats",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-medal",
+      "title": "Achievements",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-bells",
+      "title": "Reminders",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles-sm",
+      "title": "Mentor help",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
   ]
 }
