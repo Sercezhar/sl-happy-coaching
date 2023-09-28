@@ -1,0 +1,116 @@
+.about-hero {
+  background-color: var(--color-off-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+
+    @media (max-width: $mobileSmall) {
+      padding-block: 92px;
+    }
+  }
+
+  & .pretitle,
+  & .h1 {
+    margin-bottom: 6px;
+  }
+
+  & .hero__text {
+    margin-bottom: 23px;
+  }
+}
+
+.about-hero-img {
+  width: 100%;
+  object-fit: cover;
+
+  @media (max-width: $tablet) {
+    height: 426px;
+  }
+
+  &__wrapper {
+    position: relative;
+    margin: 100px 91px -26px 0;
+    width: percent(462, 1280);
+    max-width: 462px;
+
+    @media (max-width: $tablet) {
+      margin-right: 0;
+      width: 98%;
+      max-width: 326px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: none;
+    }
+  }
+
+  &__icon,
+  &__info {
+    box-shadow: 0px 48px 72px rgba(177, 186, 199, 0.12);
+  }
+
+  &__icon {
+    position: absolute;
+    top: -40px;
+    left: percent(98, 462);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__info {
+    position: absolute;
+    top: percent(193, 603);
+    right: -124px;
+    @include adaptiveValue('padding-block', 32, 0);
+    @include adaptiveValue('padding-inline', 40, 0);
+    text-align: center;
+    background-color: #fff;
+
+    @media (max-width: ($maxWidth + px)) {
+      right: -90px;
+    }
+
+    @media (max-width: $tablet) {
+      top: -50px;
+      right: 10px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      @include adaptiveValue('padding', 20, 10);
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: none;
+    }
+
+    & svg {
+      margin-bottom: 24px;
+
+      @media (max-width: $tablet) {
+        margin-bottom: 0;
+      }
+    }
+
+    & p {
+      @include adaptiveValue('font-size', 16, 12);
+      letter-spacing: -0.02em;
+    }
+
+    & p:last-of-type {
+      margin-top: 4px;
+      color: #041434;
+    }
+  }
+}
