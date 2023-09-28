@@ -12,8 +12,8 @@
   & .pretitle {
     margin-bottom: 6px;
 
-    @media (max-width: $mobileMedium) {
-      font-size: 13px;
+    @media (min-width: $mobileSmall) and (max-width: $mobileMedium) {
+      font-size: 14px;
     }
   }
 
@@ -33,16 +33,13 @@
 
   & img {
     width: percent(462, 1280);
-    max-width: 462px;
     @include adaptiveValue('margin-right', 91, 0);
+    max-width: 462px;
+    object-fit: cover;
 
     @media (max-width: $tablet) {
       margin-right: 0;
-    }
-
-    @media (max-width: $mobileMedium) {
-      height: 350px;
-      object-fit: cover;
+      height: 426px;
     }
 
     @media (max-width: $mobileSmall) {
