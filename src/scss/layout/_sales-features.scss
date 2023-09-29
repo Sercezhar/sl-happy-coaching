@@ -1,6 +1,14 @@
 .sales-features {
   background: linear-gradient(180deg, var(--color-off-white) 54.3%, #fff 50%);
 
+  @media (max-width: $mobileMedium) {
+    background: linear-gradient(180deg, var(--color-off-white) 65%, #fff 50%);
+  }
+
+  @media (max-width: $mobileSmall) {
+    background: linear-gradient(180deg, var(--color-off-white) 75%, #fff 50%);
+  }
+
   &__container {
     padding-block: 96px;
   }
@@ -42,6 +50,7 @@
     aspect-ratio: 16 / 9;
     max-width: 768px;
     border-radius: 8px;
+    box-shadow: 0px 32px 64px rgba(15, 23, 40, 0.2);
     overflow: hidden;
 
     & iframe {
