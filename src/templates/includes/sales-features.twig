@@ -1,0 +1,47 @@
+<section class="sales-features">
+  <div class="sales-features__container">
+    <div class="sales-features__body">
+      <div class="services-features__text-wrapper">
+        <p class="pretitle">How does it work?</p>
+        <h2 class="h2">Are you ready to transform your life?</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua minim
+          veniam.
+        </p>
+      </div>
+
+      <ul class="features-list">
+        {% for feature in servicesFeatures[2:] %}
+        <li class="features-list__item">
+          <div class="features-list__icon-wrapper">
+            <svg>
+              <use href="{{ feature.icon }}"></use>
+            </svg>
+          </div>
+
+          <div>
+            <h6 class="h6">{{ feature.title }}</h6>
+            <p>{{ feature.text }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="sales-features__video">
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Rick Astley - Never Gonna Give You Up (Official Music Video)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <div class="sales-features__thumb">
+        <svg width="80" height="80">
+          <use href="./images/icons.svg#icon-play-button"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
