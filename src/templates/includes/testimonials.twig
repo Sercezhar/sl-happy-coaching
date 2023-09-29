@@ -1,0 +1,32 @@
+<section class="testimonials">
+  <div class="testimonials__container">
+    <div class="testimonials__head">
+      <div>
+        <p class="pretitle">Testimonials</p>
+        <h2 class="h2">Results that speak for themselves</h2>
+      </div>
+
+      {% include './../components/button.twig' with {'text': 'Get started'} %}
+    </div>
+
+    <ul class="testimonials-list">
+      {% for testimonial in testimonials %}
+      <li class="testimonials-list__item">
+        <p class="testimonials-list__text">{{ testimonial.text }}</p>
+
+        <div class="testimonials-list__user">
+          <img src="{{ testimonial.avatar }}" alt="person" />
+          <h6 class="h6 testimonials-list__name">{{ testimonial.name }}</h6>
+          <p class="pretitle">
+            {{ testimonial.profession }}
+          </p>
+        </div>
+
+        <svg width="116" height="20">
+          <use href="./images/icons.svg#icon-stars"></use>
+        </svg>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
