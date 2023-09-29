@@ -109,5 +109,31 @@
       "title": "Ready to start? Let’s talk!",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
     }
+  ],
+  "testimonials": [
+    {
+      "avatar": "./images/Sales/avatar-1.jpg",
+      "name": "Naam",
+      "profession": "Data engineer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "avatar": "./images/Sales/avatar-2.jpg",
+      "name": "Chloe",
+      "profession": "Nurse",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "avatar": "./images/Sales/avatar-3.jpg",
+      "name": "Felix",
+      "profession": "Software developer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "avatar": "./images/Sales/avatar-4.jpg",
+      "name": "Amber",
+      "profession": "Veterinarian",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
   ]
 }
