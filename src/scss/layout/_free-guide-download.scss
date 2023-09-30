@@ -1,0 +1,76 @@
+.free-guide-download {
+  &__container {
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 39px;
+    max-width: $maxWidth + px;
+    background-image: url('./../images/FreeGuide/left-1.png'),
+      url('./../images/FreeGuide/left-2.png'),
+      url('./../images/FreeGuide/right-1.png'),
+      url('./../images/FreeGuide/right-2.png'),
+      url('./../images/FreeGuide/right-3.png');
+    background-repeat: no-repeat;
+    background-position: top 36.8% left 9.94%, bottom 26.9% left 4.5%,
+      top 2.5% right 18.7%, top 41.4% right 5.72%, bottom 27.3% right 14.1%;
+    background-size: 114px, 58px, 76px, 42px, 62px;
+
+    @media (max-width: $tablet) {
+      background-position: top 33.8% left 1.94%, bottom 26.9% left 4.5%,
+        top 2.5% right 18.7%, top 41.4% right 3.72%, bottom 27.3% right 14.1%;
+      background-size: 74px, 58px, 76px, 42px, 62px;
+    }
+
+    @media (max-width: $mobileMedium) {
+      background-position: top 3% left 16.94%, bottom 39.9% left 6.5%,
+        top 0 right 18.7%, top 57.4% right 3.72%, bottom 17.3% right 10.1%;
+      background-size: 64px, 58px, 54px, 42px, 62px;
+    }
+
+    @media (max-width: $mobileSmall) {
+      background-position: top 3% left 16.94%, bottom 17.9% left 7.5%,
+        top 0 right 18.7%, bottom 16.4% right 2%, bottom 1.3% right 15.1%;
+      background-size: 64px, 36px, 54px, 36px, 46px;
+    }
+  }
+
+  &__text-wrapper {
+    margin-bottom: 40px;
+
+    & .h2,
+    & p {
+      margin-inline: auto;
+    }
+
+    & .h2 {
+      margin-bottom: 16px;
+      max-width: 730px;
+
+      & span {
+        color: var(--color-accent);
+      }
+    }
+
+    & p {
+      max-width: 560px;
+      @include adaptiveValue('font-size', 18, 16);
+      line-height: 1.39;
+    }
+  }
+
+  &__link {
+    @extend .button;
+    margin-inline: auto;
+    margin-bottom: 68px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+
+  &__rating {
+    & .pretitle {
+      margin-bottom: 6px;
+      @include adaptiveValue('font-size', 16, 14);
+    }
+  }
+}
