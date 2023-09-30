@@ -10,7 +10,7 @@ function images() {
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
         imagemin.mozjpeg({ quality: 80, progressive: true }),
-        imagemin.optipng({ optimizationLevel: 5 }),
+        imagemin.optipng({ optimizationLevel: 4 }),
         imagemin.svgo({
           plugins: [{ removeViewBox: false }, { cleanupIDs: false }],
         }),
