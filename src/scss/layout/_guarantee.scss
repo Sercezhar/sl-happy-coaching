@@ -1,0 +1,29 @@
+.guarantee {
+  padding-bottom: 122px;
+
+  &__container {
+    text-align: center;
+  }
+
+  & svg {
+    @media (max-width: $mobileMedium) {
+      width: 234px;
+      height: 200px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    color: var(--color-dark-purple);
+  }
+
+  &__text {
+    margin-inline: auto;
+    max-width: 540px;
+    @include adaptiveValue('font-size', 20, 16);
+  }
+}
