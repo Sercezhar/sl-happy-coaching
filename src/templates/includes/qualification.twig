@@ -1,0 +1,40 @@
+<section class="qualification">
+  <div class="qualification__container">
+    <div class="qualification__text-wrapper">
+      <p class="pretitle">This is not for everyone!</p>
+      <h2 class="h2">This program is perfect for you if...</h2>
+    </div>
+
+    <div class="qualification__body">
+      <div class="qualification-list__wrapper">
+        <h5 class="h5">This is <span>NOT</span> for you if...</h5>
+
+        <ul class="qualification-list">
+          {% for qualification in qualifications.negative%}
+          <li>
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+            {{ qualification }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="qualification-list__wrapper">
+        <h5 class="h5">This is for you if...</h5>
+
+        <ul class="qualification-list">
+          {% for qualification in qualifications.positive%}
+          <li>
+            <svg width="20" height="20">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            {{ qualification }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
