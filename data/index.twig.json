@@ -1,0 +1,23 @@
+{
+  "title": "Home",
+  "blogs": [
+    {
+      "image": "./images/Home/blogs-1.jpg",
+      "alt": "the girl in glasses is smiling",
+      "title": "Balancing your love and work life.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "image": "./images/Home/blogs-2.jpg",
+      "alt": "open book in hands",
+      "title": "A short break from Social Media is important.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "image": "./images/Home/blogs-3.jpg",
+      "alt": "the girl with the camera is smiling",
+      "title": "How to be 1% Better Every Day.",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    }
+  ]
+}

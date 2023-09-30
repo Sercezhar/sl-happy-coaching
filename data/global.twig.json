@@ -1,0 +1,139 @@
+{
+  "services": [
+    {
+      "icon": "./images/icons.svg#icon-couple",
+      "title": "Group Sessions",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "icon": "./images/icons.svg#icon-book",
+      "title": "Online course",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles",
+      "title": "Consultation",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    },
+    {
+      "icon": "./images/icons.svg#icon-book",
+      "title": "1:1 Coaching",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
+    }
+  ],
+  "reviews": [
+    {
+      "image": "./images/clients/client-1.jpg",
+      "name": "Jane",
+      "comment": "I gained so much confidence in my ability to connect and deepen my relationships with people."
+    },
+    {
+      "image": "./images/clients/client-2.jpg",
+      "name": "Catherine",
+      "comment": "I gained so much confidence in my ability to connect and deepen my relationships with people."
+    },
+    {
+      "image": "./images/clients/client-3.jpg",
+      "name": "Kara",
+      "comment": "I gained so much confidence in my ability to connect and deepen my relationships with people."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How long does the coaching process take?",
+      "answer": "Yes, you can try us for free for 30 days. If you want, we’ll provide you with a free, personalized 30-minute onboarding call to get you up and running as soon as possible."
+    },
+    {
+      "question": "What if I wanted to end my coaching engagement?",
+      "answer": "You can end the coaching engagement at any time. Your comfort and progress are our top priorities."
+    },
+    {
+      "question": "Can I change through coaching?",
+      "answer": "Absolutely! Coaching is designed to help you grow, gain confidence, and make positive changes in your life."
+    },
+    {
+      "question": "How often do we meet?",
+      "answer": "We typically meet on a weekly basis, but we can adjust the frequency based on your needs and schedule."
+    }
+  ],
+  "features": [
+    {
+      "icon": "./images/icons.svg#icon-speech-bubble",
+      "title": "Ready to start? Let’s talk!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-calendar",
+      "title": "Personal schedule",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles-sm",
+      "title": "Group chats",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-medal",
+      "title": "Achievements",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-bells",
+      "title": "Reminders",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles-sm",
+      "title": "Mentor help",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ],
+  "servicesFeatures": [
+    {
+      "icon": "./images/icons.svg#icon-speech-bubbles-sm",
+      "title": "Talk to me first",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    },
+    {
+      "icon": "./images/icons.svg#icon-calendar",
+      "title": "Schedule a meeting",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    },
+    {
+      "icon": "./images/icons.svg#icon-skype",
+      "title": "Online consultation",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    },
+    {
+      "icon": "./images/icons.svg#icon-speech-bubble",
+      "title": "Ready to start? Let’s talk!",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+    }
+  ],
+  "testimonials": [
+    {
+      "avatar": "./images/Sales/avatar-1.jpg",
+      "name": "Naam",
+      "profession": "Data engineer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "avatar": "./images/Sales/avatar-2.jpg",
+      "name": "Chloe",
+      "profession": "Nurse",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "avatar": "./images/Sales/avatar-3.jpg",
+      "name": "Felix",
+      "profession": "Software developer",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "avatar": "./images/Sales/avatar-4.jpg",
+      "name": "Amber",
+      "profession": "Veterinarian",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+  ]
+}
