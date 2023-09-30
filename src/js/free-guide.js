@@ -1,3 +1,3 @@
-// import { playVideo } from './modules/playVideo';
+import { playVideo } from './modules/playVideo';
 
-// playVideo();
+playVideo();
