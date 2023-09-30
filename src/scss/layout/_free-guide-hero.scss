@@ -1,0 +1,98 @@
+.free-guide-hero {
+  background-color: var(--color-off-white);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding-block: 64px;
+
+    & > img {
+      &:first-of-type {
+        min-width: 389px;
+        width: percent(478, 1280);
+
+        @media (max-width: $mobileMedium) {
+          display: none;
+        }
+      }
+
+      &:last-of-type {
+        display: none;
+        width: 39%;
+        height: 491px;
+        object-fit: cover;
+        object-position: top 0 left 30%;
+
+        @media (min-width: $mobileSmall) and (max-width: $mobileMedium) {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__text-wrapper {
+    margin-bottom: 38px;
+
+    & .h1 {
+      margin-bottom: 24px;
+      max-width: 612px;
+
+      @media (max-width: $mobileSmall) {
+        @include adaptiveValue('font-size', 82, 34);
+      }
+    }
+
+    & > img {
+      margin-bottom: 16px;
+      width: 100%;
+
+      @media (min-width: $mobileSmall) {
+        display: none;
+      }
+    }
+
+    & > p {
+      max-width: 480px;
+      @include adaptiveValue('font-size', 20, 16);
+    }
+  }
+}
+
+.guide-form {
+  max-width: 300px;
+
+  & div {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      font-size: 14px;
+      line-height: 1.43;
+      color: #667085;
+
+      @media (max-width: $mobileSmall) {
+        font-size: 12px;
+      }
+
+      & a {
+        display: inline-block;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  & input,
+  & button {
+    width: 100%;
+  }
+
+  & input {
+    @extend .newsletter-form__input;
+  }
+
+  & button {
+    @extend .newsletter-form__button;
+  }
+}
