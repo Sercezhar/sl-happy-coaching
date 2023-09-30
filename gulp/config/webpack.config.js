@@ -7,6 +7,7 @@ const config = {
     services: './src/js/services.js',
     about: './src/js/about.js',
     sales: './src/js/sales.js',
+    'free-guide': './src/js/free-guide.js',
   },
   output: {
     filename: '[name].min.js',
