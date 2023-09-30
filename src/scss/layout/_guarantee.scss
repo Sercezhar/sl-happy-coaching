@@ -1,5 +1,9 @@
 .guarantee {
-  padding-bottom: 122px;
+  padding-bottom: 48px;
+
+  @media (min-width: $mobileMedium) {
+    padding-bottom: 122px;
+  }
 
   &__container {
     text-align: center;
