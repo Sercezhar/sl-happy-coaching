@@ -8,6 +8,11 @@
     gap: 32px;
     padding-block: 64px;
 
+    @media (max-width: $mobileSmall) {
+      padding-top: 48px;
+      padding-bottom: 96px;
+    }
+
     & > img {
       &:first-of-type {
         min-width: 389px;

@@ -36,6 +36,10 @@
   & .h1 {
     margin-bottom: 22px;
     max-width: 510px;
+
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
@@ -63,6 +67,11 @@
     object-position: top 0 left 30%;
   }
 
+  @media (max-width: $mobileSmall) {
+    @include adaptiveValue('height', $heroImgMobile, 100, 479.98, 320);
+    object-position: top 32% left 0;
+  }
+
   &__wrapper {
     position: relative;
     bottom: -26px;
@@ -79,7 +88,9 @@
     }
 
     @media (max-width: $mobileSmall) {
-      display: none;
+      margin-bottom: 16px;
+      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -104,6 +115,10 @@
       display: block;
       padding: 12px;
       width: auto;
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: none;
     }
 
     & .h5 {

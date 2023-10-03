@@ -6,7 +6,8 @@
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-    padding-block: 92px;
+    @include adaptiveValue('padding-top', 96, 48);
+    padding-bottom: 96px;
   }
 
   & .pretitle {
@@ -23,6 +24,7 @@
     @include adaptiveValue('font-size', 72, 28);
 
     @media (max-width: $mobileSmall) {
+      margin-bottom: 16px;
       @include adaptiveValue('font-size', 72, 38);
     }
   }
@@ -43,7 +45,10 @@
     }
 
     @media (max-width: $mobileSmall) {
-      display: none;
+      margin-bottom: 16px;
+      width: 100%;
+      @include adaptiveValue('height', $heroImgMobile, 100, 479.98, 320);
+      object-position: top 22% left 0;
     }
   }
 }

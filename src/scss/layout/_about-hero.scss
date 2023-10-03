@@ -8,13 +8,20 @@
     gap: 32px;
 
     @media (max-width: $mobileSmall) {
-      padding-block: 92px;
+      padding-top: 48px;
+      padding-bottom: 96px;
     }
   }
 
   & .pretitle,
   & .h1 {
     margin-bottom: 6px;
+  }
+
+  & .h1 {
+    @media (max-width: $mobileSmall) {
+      margin-bottom: 16px;
+    }
   }
 
   & .hero__text {
@@ -30,6 +37,11 @@
     height: 426px;
   }
 
+  @media (max-width: $mobileSmall) {
+    @include adaptiveValue('height', $heroImgMobile, 100, 479.98, 320);
+    object-position: top 34% left 0;
+  }
+
   &__wrapper {
     position: relative;
     margin: 100px 91px -26px 0;
@@ -43,7 +55,9 @@
     }
 
     @media (max-width: $mobileSmall) {
-      display: none;
+      margin: 0 0 16px 0;
+      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -93,6 +107,10 @@
 
     @media (max-width: $mobileMedium) {
       display: block;
+    }
+
+    @media (max-width: $mobileSmall) {
+      display: none;
     }
 
     & svg {
