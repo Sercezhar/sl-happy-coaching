@@ -39,7 +39,7 @@
       display: block;
       position: relative;
       width: 28px;
-      height: 19px;
+      height: calc($burgerLineHeight * 6);
       background-color: transparent;
       cursor: pointer;
       z-index: 11;
@@ -49,21 +49,22 @@
         content: '';
       }
 
-      span,
+      & span,
       &::before,
       &::after {
         position: absolute;
         right: 0;
         width: 100%;
-        height: 3px;
+        height: $burgerLineHeight;
         background-color: var(--color-dark-purple);
         border-radius: 2px;
         transition-timing-function: $transitionBase;
       }
 
-      span {
+      & span {
+        top: 50%;
+        transform: translateY(-50%);
         transition-delay: 150ms;
-        top: calc(50% - 1px);
       }
 
       &::before {
@@ -77,19 +78,19 @@
       }
 
       &--active {
-        span {
+        & span {
           opacity: 0;
         }
 
         &::before {
-          top: calc(50% - 1px);
-          transform: rotate(-45deg);
+          top: 50%;
+          transform: translateY(-50%) rotate(-45deg);
           transition: top 150ms, transform 150ms 150ms;
         }
 
         &::after {
-          bottom: calc(50% - 2px);
-          transform: rotate(45deg);
+          bottom: calc(50% - $burgerLineHeight);
+          transform: translateY(-50%) rotate(45deg);
           transition: bottom 150ms, transform 150ms 150ms;
         }
       }
