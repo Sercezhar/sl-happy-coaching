@@ -567,7 +567,7 @@ sup {
     display: block;
     position: relative;
     width: 28px;
-    height: 19px;
+    height: 1.26rem;
     background-color: transparent;
     cursor: pointer;
     z-index: 11;
@@ -579,14 +579,15 @@ sup {
     position: absolute;
     right: 0;
     width: 100%;
-    height: 3px;
+    height: 0.21rem;
     background-color: var(--color-dark-purple);
     border-radius: 2px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
   .header__burger span {
+    top: 50%;
+    transform: translateY(-50%);
     transition-delay: 150ms;
-    top: calc(50% - 1px);
   }
   .header__burger::before {
     top: 0;
@@ -600,13 +601,13 @@ sup {
     opacity: 0;
   }
   .header__burger--active::before {
-    top: calc(50% - 1px);
-    transform: rotate(-45deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
     transition: top 150ms, transform 150ms 150ms;
   }
   .header__burger--active::after {
-    bottom: calc(50% - 2px);
-    transform: rotate(45deg);
+    bottom: calc(50% - 0.21rem);
+    transform: translateY(-50%) rotate(45deg);
     transition: bottom 150ms, transform 150ms 150ms;
   }
 }
